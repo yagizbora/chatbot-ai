@@ -26,6 +26,7 @@ pairs = [
     ['(How does the company handle requests for accommodations or disabilities?)',['We are committed to providing reasonable accommodations for employees with disabilities and work with employees to determine what accommodations are necessary and appropriate. We also have a process in place for employees to request accommodations and ensure that all requests are handled with confidentiality and respect.']],
     ['(What opportunities are available for advancement within the company?)',['We believe in supporting employee growth and development and offer a range of opportunities for advancement within the company. These may include promotions, lateral moves, and opportunities to take on new projects and responsibilities. We encourage employees to discuss their career goals with their manager and explore available opportunities.']],
     ['(thank you|thanks)', ['You are welcome!']],
+    ['(What benefits does the company offer?)',['"Our company offers a range of benefits']],
     ['(goodbye|bye)', ['Goodbye!', 'Take care!', 'See you later.']]
 ]
 
