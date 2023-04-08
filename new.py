@@ -1,5 +1,18 @@
+import sys
 import nltk
 from nltk.chat.util import Chat, reflections
+
+
+class Chat(Chat):
+    def respond(self, message):
+        # Call the respond method of the parent class
+        response = super().respond(message)
+        
+         # Check if the response is None
+        if response is None:
+            return "I'm sorry, I don't understand. Please ask me something else."
+        
+        return response
 
 # Define the chatbot's responses 
 pairs = [
@@ -30,8 +43,10 @@ pairs = [
     ['(thank you|thanks)', ['You are welcome!']],
     ['(What benefits does the company offer?)',['Our company offers a range of benefits']],
     ['(Okay|Ok)',['Okay If you still have any questions , you can ask me.']],
+    ['(Quit|quit)',['Goodbye, Have a nice days']],
     ['(goodbye|bye)', ['Goodbye!', 'Take care!', 'See you later.']]
  ]
+
 
 
 # Initialize the chatbot
@@ -39,3 +54,5 @@ hr_bot = Chat(pairs, reflections)
 
 # Start the chatbot
 hr_bot.converse()
+
+sys.exit(0)
