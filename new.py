@@ -1,10 +1,12 @@
 import nltk
 from nltk.chat.util import Chat, reflections
 
-# Define the chatbot's responses
+# Define the chatbot's responses 
 pairs = [
     ['(hi|hello|hey)', ['Hello!', 'Hi there!', 'Hi, how can I assist you today?']],
+    ['(.*) your name?',['My name is HR Bot.']],
     ['(what is your name|what are you called)', ['My name is HR Bot.']],
+    ['(How are you?)',['Good what is your question?']],
     ['(what do you do|what is your purpose)', ['I am here to help with any HR-related questions you have.']],
     ['(employee benefits|benefits|insurance)', ['We offer a variety of benefits to our employees, including health insurance and retirement plans.']],
     ['(vacation time|vacation days|pto)', ['Employees receive a certain number of paid time off days per year, which can be used for vacation or personal reasons.']],
@@ -26,9 +28,11 @@ pairs = [
     ['(How does the company handle requests for accommodations or disabilities?)',['We are committed to providing reasonable accommodations for employees with disabilities and work with employees to determine what accommodations are necessary and appropriate. We also have a process in place for employees to request accommodations and ensure that all requests are handled with confidentiality and respect.']],
     ['(What opportunities are available for advancement within the company?)',['We believe in supporting employee growth and development and offer a range of opportunities for advancement within the company. These may include promotions, lateral moves, and opportunities to take on new projects and responsibilities. We encourage employees to discuss their career goals with their manager and explore available opportunities.']],
     ['(thank you|thanks)', ['You are welcome!']],
-    ['(What benefits does the company offer?)',['"Our company offers a range of benefits']],
+    ['(What benefits does the company offer?)',['Our company offers a range of benefits']],
+    ['(Okay|Ok)',['Okay If you still have any questions , you can ask me.']],
     ['(goodbye|bye)', ['Goodbye!', 'Take care!', 'See you later.']]
-]
+ ]
+
 
 # Initialize the chatbot
 hr_bot = Chat(pairs, reflections)
