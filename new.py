@@ -11,7 +11,7 @@ class Chat(Chat):
          # Check if the response is None
         if response is None:
             return "I'm sorry, I don't understand. Please ask me something else."
-        
+            
         return response
 
 # Define the chatbot's responses 
@@ -25,7 +25,7 @@ pairs = [
     ['(vacation time|vacation days|pto)', ['Employees receive a certain number of paid time off days per year, which can be used for vacation or personal reasons.']],
     ['(how do I sign up for benefits|benefits enrollment)', ['You can sign up for benefits during the open enrollment period, which typically occurs once a year.']],
     ['(new employee|onboarding|orientation)', ['New employees will receive an orientation to the company, including an overview of company policies and procedures.']],
-    ['(What benefits does the company offer?)',['Our company offers a range of benefits including health insurance, retirement plans, paid time off, and professional development opportunities.']],
+    #['(What benefits does the company offer?)',['Our company offers a range of benefits including health insurance, retirement plans, paid time off, and professional development opportunities.']],
     ['(How can I apply for a job at your company?)',['You can visit our careers page on our website and search for available positions. Once you find a position you are interested in, you can apply online by submitting your resume and completing our online application.']],
     ['(Can you tell me more about the company culture?)',['Our company values teamwork, innovation, and diversity. We strive to create a welcoming and inclusive workplace where all employees feel valued and respected. We encourage open communication and support employee growth and development.']],
     ['(What is the interview process like at your company?)',['Our interview process typically includes a phone screening, a virtual or in-person interview, and possibly a skills assessment or job-related task. We aim to make the interview process as transparent and comfortable as possible for candidates.']],
@@ -46,8 +46,6 @@ pairs = [
     ['(Quit|quit)',['Goodbye, Have a nice days']],
     ['(goodbye|bye)', ['Goodbye!', 'Take care!', 'See you later.']]
  ]
-
-
 
 # Initialize the chatbot
 hr_bot = Chat(pairs, reflections)
